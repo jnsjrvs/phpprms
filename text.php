@@ -1,5 +1,7 @@
 <?php
 
-$ff = fopen( filename: "tekstai/tekstas.txt ,mode:'ww");
-$a = 'stai ir as';
-fclose
+$ff =  "tekstai/tekstas.txt ,mode:'w");
+$s = 'stai ir as';
+fwrite($ff, $s);
+fclose($ff);
+echo 'ok';
