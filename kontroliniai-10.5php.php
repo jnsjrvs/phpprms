@@ -5,7 +5,7 @@ programavimas (dšimtbalėje sistemoje). Sukurti metodą, kuris gražina visus e
 (egzaminas yra išlaikytas, jeigu rezultatas yra >= 5. Sukurti metodą,kuris gražina egzaminų laikymo vidurkį. Pademonstruoti veikimą.
  */
 
-class sarasas  {
+class cla  {
     public $sarasas = [];
     function add($v, $f, $m, $p){
         $this->sarasas[] = [
@@ -15,15 +15,28 @@ class sarasas  {
             'program' => $p
         ];
     }
+
+
       function islaike(){
-          $islaik=[];
+          $$m=[];
           foreach ($this->sarasas as $std){
-              if ($std['fizika']>=5 and $std['matemat']>=5 and $std['program']) $islaik[]= $std['vardas'];
+              if ($std['fizika']>=5 and $std['matemat']>=5 and $std['program']) $islaik[]= $std['vardas']
+              $m[] = $std('vardas');
           }
-          return $islaik;
+          return $m;
+      }
+      function vidurkis() {
+           $s = 0;
+           foreach($this->sarasas as $std){
+               $s += $std['fizika'] + $std['matematika'] + $
+           }
       }
 
 };
+$o = new cla();
+$o->add('Jonas',10, 8, 9);
+$o->add('Petras',6,4, 8);
+$o->add('Maryte', 5, 9, 7);
 
 /*
     $s=0;
