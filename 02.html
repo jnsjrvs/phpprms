@@ -1,0 +1,51 @@
+
+
+<!--
+Sukurkite HTML dokumentą, kurio <head> skiltyje būtų aprašytas stilius.
+Visas dokumento fonas - paveikslėlis, teksto dydis 13px ir teksto spalva balta.
+Dokumente turėtų būti išvesta 3x3 lentelė sudaryta iš <div> elementų,
+Div langeliai - div eilutėse, o šios - pagrindiniam div elemente.
+Eilutės lentelėje turi būti su paraštėmis 10px,langeliai lentelėse savo ruožtu taip pat su 5px paraštėmis.
+Langelių fono spalva turi būti ruda. Langeliuose - tekstas.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-image: url('https://www.codeacademy.lt/wp-content/uploads/2017/05/logo.png');
+             background-size: 100%;
+             font-size: 13px;
+             background-color: white;
+         }
+         .table { display: table; border-spacing: 8px; }
+         .row { display: table-row; padding: 10px; }
+        .cell {
+            display: table-cell;
+            padding: 5px;
+            background-color: brown;
+             color: white;
+         }
+     </style>
+ </head>
+ <body>
+ <div class="table">
+     <div class="row">
+         <div class="cell">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="cell">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+     </div>
+     <div class="row">
+         <div class="cell">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+         <div class="cell">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+     </div>
+ </div>
+
+</head>
+<body>
+
+</body>
+</html>
